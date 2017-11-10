@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="component">
+		<field
+				name="file_store_path"
+				type="text"
+				label="File store path"
+				description="Enter file store path"
+				required="true"
+				/>
+	</fieldset>
+</config>

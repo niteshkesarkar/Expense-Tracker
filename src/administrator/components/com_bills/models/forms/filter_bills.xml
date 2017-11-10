@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <form>
+	<fields name="filter" >
+		<field
+			name="search"
+			type="text"
+			label="search"
+			hint="search"
+			class="js-stools-search-string"
+			/>
+		<field
+				name="created_by"
+				type="billsusers"
+				label="Created By"
+				description="Enter user's name"
+				default=""
+				multiple="false"
+				onchange="this.form.submit();"
+				>
+			<option value="">-- Select Created By User --</option>
+		</field>
+		<field
+				name="paid_for"
+				type="billsusers"
+				label="Paid For"
+				description="Enter user's name"
+				default=""
+				multiple="false"
+				onchange="this.form.submit();"
+				>
+			<option value="">-- Select Paid For User --</option>
+		</field>
+		<field
+				name="minimum_amount"
+				type="number"
+				label="Amount"
+				description="Enter minimum amount"
+				hint="Enter minimum amount"
+				default=""
+				onchange="this.form.submit();"
+				/>
+		<field
+				name="maximum_amount"
+				type="number"
+				label="Amount"
+				description="Enter maximum amount"
+				hint="Enter maximum amount"
+				default=""
+				onchange="this.form.submit();"
+				/>
+		<field
+				name="start_date"
+				type="calendar"
+				label="Start Created Date"
+				description="Enter start date"
+				hint="Enter start date"
+				default=""
+				onchange="this.form.submit();"
+				/>
+		<field
+				name="end_date"
+				type="calendar"
+				label="End Created Date"
+				description="Enter end date"
+				hint="Enter end date"
+				default=""
+				onchange="this.form.submit();"
+				/>
+	</fields>
+</form>

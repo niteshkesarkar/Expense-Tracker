@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic">
+		<field
+				name="title"
+				type="text"
+				label="Title"
+				description="Enter title"
+				required="true"
+				/>
+		<field
+				name="description"
+				type="textarea"
+				label="Description"
+				description="Enter description"
+				required="true"
+				/>
+		<field
+				name="created_by"
+				type="hidden"
+				/>
+		<field
+				name="created_date"
+				type="calendar"
+				label="Created Date"
+				description="Enter created date"
+				required="true"
+				/>
+		<field
+				name="amount"
+				type="number"
+				label="Amount"
+				description="Enter amount"
+				required="true"
+				/>
+		<field
+				name="id"
+				type="hidden"
+				/>
+		<field
+				name="bill_type"
+				type="billstypes"
+				label="Bill Type"
+				description="Enter bill type"
+				required="true"
+				>
+				<option value="-1" disabled="true" >-- Select bill type --</option>
+		</field>
+		<field
+				name="group_id"
+				type="billsgroups"
+				label="Group"
+				description="Enter groups"
+				onchange="billsJs.bill.getUsersFromGroup(this.value)"
+				required="true"
+				>
+			<option value="-1" disabled="true" >-- Select groups --</option>
+		</field>
+		<field
+				name="for_users"
+				type="billsusers"
+				label="Users"
+				description="Enter users"
+				required="true"
+				multiple="true"
+				>
+			<option value="-1" disabled="true" >-- Select users --</option>
+		</field>
+		<field
+				name="attachments"
+				type="file"
+				label="Attachments"
+				description="Choose the attachments"
+				/>
+	</fieldset>
+</form>
